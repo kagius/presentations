@@ -1,0 +1,11 @@
+@import "compass/reset";
+@import "icons/silk/*.png";
+@include all-silk-sprites;
+
+i {
+	display:block;
+	width:16px;
+	height:16px;
+	margin-right:8px;
+	float:left;	
+}

@@ -1,0 +1,17 @@
+@import "compass/reset";
+@import "compass/utilities/sprites/base";
+$icons: sprite-map("icons/silk/*.png");
+
+[data-icon] i {
+	@include sprite-dimensions($icons, nth(sprite-names($icons),1));
+    background: $icons no-repeat;
+    float:left;
+    display:block;
+    margin-right:8px;
+}
+
+@each $icon in sprite-names($icons) {
+    [data-icon=#{$icon}] i {
+        @include sprite-background-position($icons, $icon);
+    }
+}
