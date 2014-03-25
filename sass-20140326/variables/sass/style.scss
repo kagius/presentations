@@ -1,0 +1,18 @@
+@import "compass/reset";
+
+/* Snippet 1: basic style */
+/*
+@import "base";
+*/ 
+
+/* Snippet 2: Parametrized with site 1 style */
+/* 
+@import "site1";
+@import "parametrized"; 
+*/
+
+/* Snippet 3: Parametrized with site 2 style */
+/*
+@import "site2";
+@import "parametrized"; 
+*/

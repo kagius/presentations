@@ -1,0 +1,40 @@
+html, body {
+	text-align:center;
+}
+
+article.container {
+
+	width: 50%;
+	margin:0 auto;
+	text-align:left;
+
+	header {
+
+		border-bottom:1px solid $color-primary;
+		margin-top:$paragraph-margin;
+		margin-bottom:$paragraph-margin * 2;
+
+		h1 {
+			color: $color-primary;
+			font-size:150%;
+		}
+	}
+
+	section {
+		margin-bottom: $paragraph-margin * 3;
+
+		h2 {
+			color: $color-primary;
+			font-size:120%;
+		}
+
+		p {
+			margin-bottom: $paragraph-margin;
+		}
+
+		&:last-child {
+			padding-bottom:$paragraph-margin * 2;
+			border-bottom:1px solid $color-primary;
+		}
+	}
+}
