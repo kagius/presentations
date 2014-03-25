@@ -1,0 +1,12 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "base";
+
+h1, h2 {
+	 @include text-shadow(rgba(#444, 0.2) 1px 1px 0, rgba(#444, 0.2) 2px 2px 0, rgba(#444, 0.2) 3px 3px 0);
+}
+
+article.container section:first-child p {
+	padding:1em;
+	@include box-shadow(rgba(#444, 0.4) 0 0 25px, rgba(#337, 0.2) 0 0 3px 1px inset);
+}
